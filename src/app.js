@@ -1,4 +1,4 @@
-var scores, roundScore, activePlayer, gamePlaying, FINALSCORE=100;
+var scores, roundScore, activePlayer, gamePlaying, FINALSCORE=100, IMGURL="../res/";
 
 
 
@@ -48,7 +48,7 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
   if(gamePlaying){
     var dice = Math.floor(Math.random() * 6) + 1;
     document.querySelector(".dice").style.display = "block";
-    document.querySelector(".dice").src = "dice-" + dice + ".png";
+    document.querySelector(".dice").src = IMGURL+"dice-" + dice + ".png";
   
     document.getElementById("current-" + activePlayer).innerHTML = (function(diceValue) {
       if (diceValue !== 1) {
