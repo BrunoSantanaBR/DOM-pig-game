@@ -1,4 +1,4 @@
-var scores, roundScore, activePlayer, gamePlaying, FINALSCORE=100, IMGURL="../res/";
+var scores, roundScore, activePlayer, gamePlaying, FINALSCORE=100, IMGURL="./res/";
 
 
 
